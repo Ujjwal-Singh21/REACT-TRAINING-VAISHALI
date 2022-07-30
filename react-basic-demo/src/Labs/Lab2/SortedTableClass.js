@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import './table.css'
+import '../table.css'
 
 class SortedTableClass extends Component {
 

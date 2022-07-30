@@ -12,11 +12,22 @@ code {
     monospace;
 }
 
-/* input[type=text] {
-  width: 30%;
+.primary-nav {
+  background-color: springgreen;
+  padding: 16px 32px;
+}
+
+NavLink {
+  padding: 0px 20px; 
+}
+
+input[type=text] {
+  width: 20%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 2px solid deeppink ;
+  border: 2px solid hotpink ;
   border-radius: 4px;
-} */
+}
+
+

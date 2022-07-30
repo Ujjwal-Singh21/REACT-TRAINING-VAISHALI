@@ -2,24 +2,30 @@ import './App.css';
 import Footer from './Components/Footer';
 import Content  from './Components/Content';
 import Header from './Components/Header';
-import { SortedTableFn } from './Labs/SortedTableFn';
-import SortedTableClass from './Labs/SortedTableClass';
+import { SortedTableFn } from './Labs/Lab2/SortedTableFn';
+import SortedTableClass from './Labs/Lab2/SortedTableClass';
 import ClickCounter from './Components/HOC/ClickCounter';
 import HoverCounter from './Components/HOC/HoverCounter';
+import { EmployeeForm } from './Labs/Lab1/EmployeeForm';
+import { BookListTable } from './Labs/Lab4/BookListTable';
+import { ReactForm } from './Labs/Lab3/ReactForm';
 
 function App() {
   return (
     <div className="App">
-     {/* <Header companyName='Capgemini' country='France'/> */}
-     {/* <Content /> */}
-     {/* <Footer companyName='Capgemini'/> */}
-     <ClickCounter />
-     <HoverCounter />
+     {/* <Header companyName='Capgemini' country='France'/>
+     <Content />
+     <Footer companyName='Capgemini'/> */}
+     {/* <ClickCounter /> */}
+     {/* <HoverCounter /> */}
 
      {/* Labs */}
      {/* ------ */}
      {/* <SortedTableFn employeeArr={employeeArr}/> */}
      {/* <SortedTableClass employeeArr={employeeArr}/> */}
+     {/* <EmployeeForm /> */}
+     <BookListTable />
+     {/* <ReactForm /> */}
     </div>
   );
 }
