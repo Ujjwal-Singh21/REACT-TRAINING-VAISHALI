@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import '../table.css'
+import '../../table.css'
 
 class SortedTableClass extends Component {
 
@@ -34,6 +34,7 @@ class SortedTableClass extends Component {
 
     return (
       <div>
+        
         <h3> -- Sorting Employee Class Component -- </h3>
         
          {this.sortedEmployeeFn()}

@@ -1,39 +1,44 @@
-import './App.css';
-import Footer from './Components/Footer';
-import Content  from './Components/Content';
-import Header from './Components/Header';
-import { SortedTableFn } from './Labs/Lab2/SortedTableFn';
-import SortedTableClass from './Labs/Lab2/SortedTableClass';
-import ClickCounter from './Components/HOC/ClickCounter';
-import HoverCounter from './Components/HOC/HoverCounter';
-import { EmployeeForm } from './Labs/Lab1/EmployeeForm';
-import { BookListTable } from './Labs/Lab4/BookListTable';
-import { ReactForm } from './Labs/Lab3/ReactForm';
+import './App.css'
+import Footer from './Components/Footer'
+import Content from './Components/Content'
+import Header from './Components/Header'
+import AddEmployee from './Labs/Lab2/2.1/AddEmployee'
+import SortedTableClass from './Labs/Lab2/2.2/SortedTableClass'
+import ClickCounter from './Components/HOC/ClickCounter'
+import HoverCounter from './Components/HOC/HoverCounter'
+import { ReactForm } from './Labs/Lab3/ReactForm'
+import { EmployeeForm } from './Labs/Lab1/EmployeeForm'
+import { SortedTableFn } from './Labs/Lab2/2.2/SortedTableFn'
+import { BookListTable } from './Labs/Lab4/BookListTable'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-     {/* <Header companyName='Capgemini' country='France'/>
+    <div>
+      
+      {/* <Header companyName='Capgemini' country='France'/>
      <Content />
      <Footer companyName='Capgemini'/> */}
-     {/* <ClickCounter /> */}
-     {/* <HoverCounter /> */}
+      {/* <ClickCounter /> */}
+      {/* <HoverCounter /> */}
 
-     {/* Labs */}
-     {/* ------ */}
-     {/* <SortedTableFn employeeArr={employeeArr}/> */}
-     {/* <SortedTableClass employeeArr={employeeArr}/> */}
-     {/* <EmployeeForm /> */}
-     <BookListTable />
-     {/* <ReactForm /> */}
+      {/* Labs */}
+      {/* ------ */}
+      {/* <SortedTableFn employeeArr={employeeArr} /> */}
+      {/* <SortedTableClass employeeArr={employeeArr} /> */}
+      {/* <EmployeeForm /> */}
+      {/* <BookListTable /> */}
+      {/* <ReactForm /> */}
+
+      <AddEmployee/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
+//------------------------------------------------------------------------------
 
 let employeeArr = [
-  
   {
     empId: 1001,
     empName: 'Rahul',
@@ -98,3 +103,7 @@ let employeeArr = [
     empjoiningdate: '2016-6-3'
   }
 ]
+
+// ---------------------------------
+
+

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../table.css'
+import '../../table.css'
 
 export const SortedTableFn = ({ employeeArr }) => {
 
@@ -26,6 +26,9 @@ export const SortedTableFn = ({ employeeArr }) => {
 
   return (
     <div>
+
+      <h2> -- Sorted Employee Function -- </h2>
+
       {sortedEmployeeFn()}
       <table>
         <thead>
