@@ -17,21 +17,34 @@ function UpdateEmployee ({ empData, setterFn, fn }) {
 
     <h3> UPDATE EMPLOYEE </h3>
 
-    <form onSubmit={handleSubmit}>
-      
-      <label> ID </label> 
-      <input type='text' name='empId' value={empData.empId} onChange={handleChange} readOnly /> <br />
+    <form onSubmit={handleSubmit}>    
+    <table> 
 
-      <label> NAME </label>
-      <input type='text' name='empName' value={empData.empName} onChange={handleChange} /> <br />
+      <tr>
+        <td> <label> ID </label> </td> 
+        <td> <input type='text' name='empId' value={empData.empId} onChange={handleChange} readOnly /></td> 
+      </tr>
 
-      <label> SALARY </label>
-      <input type='text' name='empSal' value={empData.empSal} onChange={handleChange} /> <br />
+      <tr>
+        <td> <label> NAME </label> </td>
+        <td> <input type='text' name='empName' value={empData.empName} onChange={handleChange} /> </td> 
+      </tr>
 
-      <label> DEPARTMENT </label>
-      <input type='text' name='empDept' value={empData.empDept} onChange={handleChange} /> <br /> <br />
+      <tr>
+       <td> <label> SALARY </label> </td>
+       <td> <input type='text' name='empSal' value={empData.empSal} onChange={handleChange} /> </td> 
+      </tr>
+
+      <tr>
+       <td>  <label> DEPARTMENT </label> </td>
+       <td> <input type='text' name='empDept' value={empData.empDept} onChange={handleChange} /></td> 
+      </tr>
+      <br /> 
+
+    </table>
 
       <button> UPDATE EMPLOYEE </button>
+      
     </form>
 
     <br />

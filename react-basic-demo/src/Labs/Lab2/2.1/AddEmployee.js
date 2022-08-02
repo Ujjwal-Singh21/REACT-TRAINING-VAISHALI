@@ -41,17 +41,30 @@ function AddEmployee () {
 
     <form onSubmit={handleSubmit}>
       
-      <label> ID </label> 
-      <input type='text' name='empId' value={empObject.empId} onChange={handleChange} /> <br />
+      <table>
+         
+       <tr>
+        <td> <label> ID </label></td> 
+        <td> <input type='text' name='empId' value={empObject.empId} onChange={handleChange} /> </td> 
+       </tr>
 
-      <label> NAME </label>
-      <input type='text' name='empName' value={empObject.empName} onChange={handleChange} /> <br />
+       <tr>
+        <td> <label> NAME </label> </td> 
+        <td> <input type='text' name='empName' value={empObject.empName} onChange={handleChange} /> </td> 
+      </tr>
 
-      <label> SALARY </label>
-      <input type='text' name='empSal' value={empObject.empSal} onChange={handleChange} /> <br />
+       <tr>
+        <td> <label> SALARY </label> </td>
+        <td> <input type='text' name='empSal' value={empObject.empSal} onChange={handleChange} /> </td> 
+       </tr>
 
-      <label> DEPARTMENT </label>
-      <input type='text' name='empDept' value={empObject.empDept} onChange={handleChange} /> <br /> <br />
+        <tr>
+          <td> <label> DEPARTMENT </label> </td>
+          <td> <input type='text' name='empDept' value={empObject.empDept} onChange={handleChange} /> </td>
+        </tr>
+
+        <br />
+      </table>
 
       <button> ADD EMPLOYEE </button>
 
