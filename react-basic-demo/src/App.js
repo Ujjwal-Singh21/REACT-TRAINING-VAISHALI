@@ -1,20 +1,32 @@
 import './App.css'
+import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Content from './Components/Content'
-import Header from './Components/Header'
+import AddMovies from './Labs/Lab5/AddMovies'
 import AddEmployee from './Labs/Lab2/2.1/AddEmployee'
-import SortedTableClass from './Labs/Lab2/2.2/SortedTableClass'
 import ClickCounter from './Components/HOC/ClickCounter'
 import HoverCounter from './Components/HOC/HoverCounter'
+import SearchMovies from './Labs/Lab5/SearchMovies'
+import SortedTableClass from './Labs/Lab2/2.2/SortedTableClass'
 import { ReactForm } from './Labs/Lab3/ReactForm'
 import { EmployeeForm } from './Labs/Lab1/EmployeeForm'
 import { SortedTableFn } from './Labs/Lab2/2.2/SortedTableFn'
 import { BookListTable } from './Labs/Lab4/BookListTable'
+import { FormValidation } from './Components/FormValidation'
+import { Routes, Route, NavLink } from 'react-router-dom'
 
 function App () {
+
+  const navLinkStyler = ({ isActive }) => {
+    return {
+      fontWeight: isActive ? 'bold' : 'normal',
+      textDecoration: isActive ? 'none' : 'underlined'
+    }
+  }
+
   return (
-    <div>
-      
+    <div className='App'>
+    {/* <div> */}
       {/* <Header companyName='Capgemini' country='France'/>
      <Content />
      <Footer companyName='Capgemini'/> */}
@@ -29,7 +41,22 @@ function App () {
       {/* <BookListTable /> */}
       {/* <ReactForm /> */}
 
-      <AddEmployee/>
+      {/* <AddEmployee/> */}
+
+      {/* LAB-5 */}
+      {/* -------------- */}
+      <>
+        <h2 style={{color: 'blue'}}> Welcome to Movie App </h2>
+        <NavLink to='/add-movies' style={navLinkStyler}> Add Movies </NavLink> <br />
+        <NavLink to='/search-movies' style={navLinkStyler}> Search Movies By Category </NavLink>
+      </>
+
+      <Routes>
+        <Route path='add-movies' element={<AddMovies />} />
+        <Route path='search-movies' element={<SearchMovies />} />
+      </Routes>
+
+      {/* <FormValidation /> */}
     </div>
   )
 }
@@ -105,5 +132,3 @@ let employeeArr = [
 ]
 
 // ---------------------------------
-
-

@@ -26,3 +26,8 @@ code {
   flex-wrap: wrap;
   justify-content: space-between;
 } */
+
+error {
+  font-style: italic;
+  color: red;
+}
